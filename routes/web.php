@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function() {
     return inertia('welcome');
 });
+Route::get('users', [\App\Http\Controllers\UsersController::class, 'index']);
+Route::get('first', \App\Http\Controllers\FirstController::class);
